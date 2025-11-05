@@ -3,70 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table lb asssig</title>
+    <title>Faculty Timetable</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .header{
+            font-weight: bold;
+        }
+        .CSE23{background-color: #f4aaaa;}
+        .CSE18{background-color: #5d4b82; color: white;}
+        .CSE15{background-color: #ffff66;}
+        .CSEDS2{background-color: #d5e8d4;}
+        .AIML3{background-color: #dce6f1;}
+
+        td.empty{
+            background-color: white;
+        }
+    </style>
 </head>
 <body>
-    <table border="1" cellpadding="10" cellspacing="0" align="center">
+    <h3>Name of the Faculty: Mr. Sanjeev Soni(SSI)</h3>
+    <h4>Course/Branch/Semester/Section: B.Tech/I Sem/CSE-15,CSE-18,CSE-23,CSEDS-2,AIML-3</h4>
+
+    <table>
         <tr>
-            <td>Name of faculty : Sanjeev Soni</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th>Time →<br>Day ↓</th>
+            <th>08:50 - 09:40</th>
+            <th>09:40 - 10:30</th>
+            <th>10:40 - 11:30</th>
+            <th>11:30 - 12:20</th>
+            <th>12:20 - 01:10</th>
+            <th>01:10 - 02:00</th>
+            <th>02:00 - 02:50</th>
+            <th>02:50 - 03:40</th>
+            <th>03:40 - 04:30</th>
+        </tr>
+
+        <tr>
+            <td>MONDAY</td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td colspan="2" class="AIML3">
+                LT-RJ-202<<br>25VA151<br>AIML3
+            </td>
         </tr>
         <tr>
-            <td>department</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>TUSEDAY</td>
+            <td colspan="2" class="CSE23">LT-RJ-309<br>CSE18</td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="CSE18">
+                LT-BH-309<br>25VA151<br>CSE18
+            </td>
+            <td class="empty"></td>
+            <td colspan="2" class="CSE15">
+                LT-rj301<br>25VA151<br>CSE15
+            </td>
+        </tr>
+
+        <tr>
+            <td>WEDNESDAY</td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td colspan="2" class="CSE18">
+                LT-BH-309<br>25VA151<br>CSE18
+            </td>
+            <td class="empty"></td>
+        </tr>
+
+        <tr>
+            <td>THURSDAY</td>
+            <td colspan="2" class="CSEDS2">
+                LT-RJ307<br>25VA151<br>CSEDS2
+            </td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="CSE15">
+                LT-RJ303<br>25VA151<br>CSE15
+            </td>
+            <td class="empty"></td>
+            <td class="AIML3">
+                <LT-RJ-101<br>25VA151<br>AIML3
+            </td>
+            <td colspan="2" class="CSE23">
+                LT-RJ-203<br>25VA151<br>CSE23
+            </td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+        </tr>
+
+        <tr>
+            <td>FRIDAY</td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td colspan="2" class="CSEDS2">
+                LT-RJ307<br>25VA151<br>CSEDS2
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+        <th>L</th>
+        <th>T</th>
+        <th>P</th>
+        <th>TOTAL</th>
         </tr>
         <tr>
-            <td>course/branch/semister/section</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>5</td>
+            <td>10</td>
+            <td>15</td>
         </tr>
-        <tr>
-            <th>time/day</th>
-        <th>8:50-9:40</th>
-        <th>9:40-10:30</th>
-        <th>10:30-11:30</th>
-        <th>11:30-12:20</th>
-        <th>12:20-1:10</th>
-        <th>1:10-2:00</th>
-        <th>2:00-2:50</th>
-        <th>2:50-3:40</th>
-        <th>3:40-4:30</th>
-        </tr>
-        <tr>
-        <td rowspan="3">monday</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      </table>
-      </body>
-      </html>
+    </table>
+</body>
+</html>
